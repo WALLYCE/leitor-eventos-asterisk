@@ -18,7 +18,7 @@ app.use(cors());
 /* 
     Nova conexao com o asterisk 
 */
-const ami = new asteriskManager(5038, '177.66.248.26', 'cobranca', '@@#123mudar', true);
+const ami = new asteriskManager(5038, server, 'cobranca', senha, true);
 ami.keepConnected(); // Esta opcao tenta reconectar caso perca a conexao com o Asterisk
 
 // Evento de quando a chamada entra na fila
